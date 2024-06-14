@@ -15,16 +15,11 @@ import com.example.projetoe.ui.theme.ProjetoeTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            ProjetoeTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
-                }
+        setContentView(R.layout.layoutmain)
             }
         }
-    }
-}
+
+
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
